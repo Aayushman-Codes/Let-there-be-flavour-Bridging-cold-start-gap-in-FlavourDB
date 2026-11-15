@@ -1,0 +1,96 @@
+# ==============================================================================
+# Git Ignore Configuration for FlavorDB & SavorLink (afml_jackfruit_final)
+# ==============================================================================
+
+# --- Operating System & Archive Junk ---
+.DS_Store
+.DS_Store?
+._*
+__MACOSX/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Python Environment & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Packaging & Distribution ---
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# --- Testing & Coverage ---
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+
+# --- IDEs & Text Editors ---
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Environment & Secrets ---
+.env
+.env.*
+
+# --- Large Metapath Random Walk Corpora (>100MB) ---
+*metapath*.txt
+M17*.txt
+*_walks_*.txt
+*.metapath
+
+# --- Compressed Bundles & Export Archives ---
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# --- Machine Learning Models, Checkpoints & Embeddings ---
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.pkl
+*.pickle
+*.npy
+*.npz
+checkpoints/
+**/checkpoints/
+
+# --- Data Directories (Raw, Cache, Splits, Exports) ---
+data/raw/
+data/cache/
+data/splits/
+data/exports/
+data/smoke_exports/
+**/data/raw/
+**/data/cache/
+**/data/splits/
+**/data/exports/
+**/data/smoke_exports/
+
+# --- Preserve documentation and requirements ---
+!requirements.txt
+!*prompts*.txt

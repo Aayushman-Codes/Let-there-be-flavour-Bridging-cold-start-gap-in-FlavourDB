@@ -1,0 +1,255 @@
+Prompt 1:
+# Project: SavorLink Strategy III — Tanimoto pseudo-edges for cold-start ingredients
+
+## Goal
+Build a PyTorch Geometric pipeline that predicts food pairings for **cold-start ingredients**
+(zero recipe co-occurrence edges) in a FlavorGraph-style food-chemical graph. The core idea:
+inject **soft, weighted pseudo-edges** from the cold node to its chemically most similar known
+ingredients (weights = Tanimoto similarity on Morgan/ECFP fingerprints), so a GraphSAGE/GAT
+aggregator has a non-empty neighborhood.
+
+## Hard constraints
+- Must run on Google Colab free tier: Tesla T4 (15 GB VRAM), <16 GB system RAM, no paid services.
+- Python 3.10+, PyTorch, PyTorch Geometric, RDKit, pandas, numpy, scikit-learn, pubchempy.
+- Never compute a dense N×N similarity matrix over the full node set. Use batched computation
+  against a pruned set of hub ingredients, and keep similarity sparse (top-k only).
+- All randomness seeded; all paths and hyperparameters in a YAML config, not hard-coded.
+- Cache every network lookup (PubChem) to disk; respect rate limits (~5 req/s); make it resumable.
+
+## Key design facts (read carefully)
+1. **Ingredients are not single molecules.** An ingredient maps to a SET of compounds.
+   Ingredient-level similarity must aggregate over compound sets. Implement and make
+   configurable: (a) mean of per-compound best-match Tanimoto (default), (b) max pairwise,
+   (c) Tanimoto between mean-pooled/union fingerprints. Document the tradeoffs in the code.
+2. **No leakage.** For a held-out (simulated cold-start) ingredient, its FlavorGraph embedding,
+   its recipe edges, and its NPMI scores must be invisible to training and to feature
+   construction. Node input features must come only from chemistry (pooled fingerprints).
+3. **Do not assume file names or column schemas.** First inspect the FlavorGraph data files
+   (nodes/edges CSVs, node types: ingredient / flavor compound / drug compound, hub flags,
+   NPMI edge weights, PubChem IDs) and report what you actually find before writing loaders.
+   If the data is not present locally, write a download script and tell me what you need from me.
+4. Cuisine-conditioned branch needs cuisine labels per recipe/edge, which FlavorGraph may not
+   include. Treat that branch as OPTIONAL and gated behind a config flag; do not block on it.
+
+## Architecture to implement
+- **Pseudo-edge builder**: for each cold node, compute similarity to hub ingredients, keep top-k
+  (configurable, default k=10), emit weighted edges (cold -> neighbor), weight = similarity.
+  Optional temperature/threshold floor. Output sparse edge_index + edge_weight.
+- **Model**: heterogeneous-aware but start simple, on the ingredient-ingredient graph:
+  - Branch A (shared-compound): weighted GraphSAGE or GAT aggregating over real edges plus
+    pseudo-edges, pseudo-edge messages scaled by Tanimoto weight.
+  - Branch B (cuisine-conditioned, optional): cuisine-specific attention modulating messages.
+  - Gated fusion of branches; link-prediction head predicting NPMI (regression) or edge
+    existence (BCE) — make this a config option and start with regression on NPMI.
+- **Cold-start-aware training**: each epoch, randomly mask ALL real edges of a random subset of
+  training ingredients (so the model learns to rely on pseudo-edges), rebuild their pseudo-edges,
+  and compute the loss on their masked true edges.
+
+## Evaluation protocol (this is the most important part)
+- Split ingredients (not edges) into train / val / test. Test ingredients have ALL real edges removed.
+- Metrics per test ingredient, ranking all other ingredients against its true partners:
+  Recall@10/20, MRR, NDCG@20, and Spearman correlation with true NPMI.
+- Baselines to implement and report in the same table:
+  1. Random
+  2. Popularity (degree)
+  3. **Tanimoto-kNN only**: average the neighbors' FlavorGraph embeddings, no GNN
+  4. Zero-degree GNN (no pseudo-edges, features only) — shows the failure mode
+  5. Full Strategy III
+  The kNN baseline matters: if the GNN can't beat it, report that honestly.
+- Run with 3+ seeds; report mean ± std.
+
+## Repo layout
+```
+savorlink/
+  configs/default.yaml
+  data/            # raw + cache (gitignored)
+  src/
+    data/          # loaders, pubchem_lookup.py (cached, resumable), splits.py
+    chem/          # fingerprints.py, similarity.py (batched, sparse top-k), pooling.py
+    graph/         # pseudo_edges.py, build_graph.py
+    models/        # strategy3.py, branches.py, heads.py
+    train.py
+    evaluate.py
+    baselines.py
+  tests/
+  notebooks/colab_quickstart.ipynb
+  README.md
+```
+
+## What to do in THIS session (stop after Phase 3 and wait for my review)
+- **Phase 0**: Inspect the FlavorGraph data (or write the download script). Print a concise report:
+  node/edge counts by type, how ingredients link to compounds, ID types available,
+  % of compounds with PubChem IDs, NPMI distribution, hub definition. Flag anything surprising.
+- **Phase 1**: Scaffold the repo, config, and a PubChem SMILES lookup with caching, RDKit
+  validation/canonicalization, and a coverage report (how many ingredients end up with how many
+  valid compounds; list ingredients with zero valid SMILES).
+- **Phase 2**: Fingerprints + the three ingredient-level similarity strategies, with unit tests
+  (identical sets -> 1.0, disjoint -> ~0, symmetry, sparse top-k correctness) and a memory
+  benchmark showing it stays well under the T4 limits.
+- **Phase 3**: Pseudo-edge builder + the ingredient-level split with leakage tests
+  (assert held-out nodes have no real edges and no embedding access in the training path).
+
+Do NOT write the model or training loop yet. Ask me before making any design decision that
+isn't covered here. Keep functions small and typed, with docstrings explaining the *why*.
+
+Prompt 2:
+# Project: SavorLink Strategy III — Tanimoto pseudo-edges for cold-start ingredients
+# CONTINUATION PROMPT — Phases 4–7 (model, training, evaluation, delivery)
+
+## State at handoff (verified, do not redo)
+- **Phase 0–3 are complete and reviewed.** Existing and passing: typed loaders for the quirky
+  CSV schema, resumable rate-limited PubChem PUG-REST SMILES cache with RDKit validation,
+  Morgan fingerprints + the three ingredient-level similarity strategies, sparse batched
+  top-k similarity against pruned hubs, the pseudo-edge builder, ingredient-level splits with
+  leakage assertions, 16 unit tests, and a memory benchmark.
+- **Dataset facts to encode in the report:** 8,298 nodes = 6,653 ingredients + 1,561 flavor
+  compounds + 84 drug compounds; 147,179 edges = 111,355 ingr-ingr (NPMI, range 0.0–0.86,
+  all non-negative) + 35,440 ingr-fcomp + 384 ingr-dcomp; 416 hub ingredients; 417 ingredients
+  own compounds (mean 85.9, max 408); 1,645/1,645 compounds have PubChem CIDs.
+- **New input, now part of the design:** a metapath random-walk corpus exists at
+  `M17-metapath_CHNHC+NHCHN+RandWalk-whichmeta_100-num_walks_50-len_metapath.txt`
+  (~241 MB, 1,114,232 walks, metapaths CHNHC / NHCHN / random). A `walks:` config section
+  governs it. Walk-derived ingredient–ingredient co-occurrence edges may REPLACE the CSV NPMI
+  edges or be merged with them (`replace_csv_edges` flag). Treat this as config-gated and
+  document the consequence either way.
+
+## Hard constraints (carried over unchanged)
+- Google Colab free tier: Tesla T4 (15 GB VRAM), <16 GB system RAM, no paid services.
+- **Never a dense N×N similarity matrix over all nodes.** Batched, hub-pruned, top-k sparse only.
+- All randomness seeded (Python, NumPy, torch CPU+CUDA). All paths and hyperparameters in
+  `configs/default.yaml`; nothing hard-coded in source.
+- Every network lookup cached to disk and resumable. No silent re-fetching.
+- Keep functions small, typed, and docstringed with the *why*, not the *what*.
+
+## Design facts that PHASES 4–7 MUST honour
+1. **The model must be strictly inductive.** No per-node learned embedding table, no node-ID
+   lookups anywhere in the forward path. A cold-start ingredient is seen only through its
+   chemistry-derived features. If you find yourself allocating `nn.Embedding(num_nodes, d)`,
+   you have reintroduced the transductive bottleneck.
+2. **Node input features come only from chemistry** (pooled Morgan fingerprints). Never from
+   graph structure or recipe co-occurrence. The leakage assertions written in Phase 3 must
+   still pass — do not weaken them.
+3. **Pseudo-edges carry their Tanimoto weight and it must scale the message.** Real edges may
+   carry weight 1.0 (or NPMI, if configured); pseudo-edge weight ∈ [0,1] = Tanimoto.
+4. **Cold-mask training masks ALL real edges of the chosen ingredients**, never a random subset
+   of edges, and the loss is computed on those hidden true edges so the model learns to lean
+   on pseudo-edges.
+5. **No hard dependency on `torch_scatter`.** Use pure-PyTorch `index_add_` / `zeros`+`scatter`
+   so the repo runs identically locally and on Colab. PyTorch Geometric is optional sugar, not
+   a requirement — if you avoid it entirely, say so in the README.
+6. Ingredients are SETS of compounds; the three similarity strategies stay configurable, with
+   `mean_best_match` as default. The Tanimoto tradeoffs docstrings already written stay.
+
+---
+
+## PHASE 4 — Model architecture  (`src/models/branches.py`, `heads.py`, `strategy3.py`)
+
+Implement the dual-branch Strategy III described in the research methodology
+("Cuisine-Conditioned Neighborhood Interpolation"):
+
+- **Branch A — Shared-Compound Branch.** Weighted GraphSAGE (default) or GAT (`use_gat` flag,
+  configurable heads). Messages over pseudo-edges are scaled by the Tanimoto weight; use a
+  proper weighted-normalised mean aggregation:
+      h_N(u) = Σ_{v∈N(u)} w_uv · h_v  /  ( Σ_{v∈N(u)} w_uv + ε )
+  so that real 1.0-weighted edges and soft 0.3-weighted pseudo-edges mix correctly and a
+  low-weight pseudo-edge can never swamp the neighbourhood. `num_layers` stackable.
+- **Branch B — Cuisine-Conditioned Branch (OPTIONAL, gated).** Off by default. FlavorGraph has
+  no cuisine labels, so when `cuisine_branch.enabled == false` this branch must be a verified
+  identity/no-op that changes nothing numerically and costs no parameters of consequence. When
+  enabled it applies cuisine-specific attention modulation. Do NOT block on cuisine data; do
+  NOT invent labels.
+- **Gated fusion** of branch outputs with a configurable mode (`gated` default, `add`, `concat`).
+- **Link-prediction head.** Symmetric pairwise scorer taking two node embeddings → a score,
+  used both for sampled training pairs and for scoring one node against all candidates.
+  Regression on NPMI (default) or edge-existence BCE, driven by `model.task`.
+
+Config the whole thing: `hidden_dim`, `num_layers`, `dropout`, `aggregator`, `heads`, `use_gat`,
+`task`, `fusion`, `cuisine_branch.{enabled,num_cuisines}`.
+
+**Required tests (add to the suite, keep the old ones green):** output shapes; `torch.no_grad()`
+vs train-mode; determinism under a fixed seed; gradients reach every parameter (no dead branch);
+the disabled-cuisine path is numerically identical to a single-branch model; a node with only
+low-weight pseudo-edges produces a finite, non-degenerate embedding; parameter count and peak
+memory printed and well under the T4 limits.
+
+---
+
+## PHASE 5 — Graph assembly + training loop  (`src/graph/build_graph.py`, `src/train.py`)
+
+- **Feature matrix assembly.** Map raw FlavorGraph node IDs → contiguous indices
+  (`build_node_id_mapping`) and stack pooled fingerprints into `[num_nodes, n_bits]`. Ingredients
+  with zero valid SMILES get an all-zero feature row (and you must report how many there are).
+- **Edge merging.** Concatenate real + pseudo edges into `edge_index [2, E]`, `edge_weight [E]`,
+  and an `is_pseudo` boolean mask that downstream code can use for differential treatment.
+- **Cold-mask training loop, per epoch:**
+  1. sample `cold_mask_frac` of *training* ingredients;
+  2. strip ALL their real edges from the training graph;
+  3. rebuild their pseudo-edges from the precomputed top-k similarities;
+  4. merge; forward; loss on the masked true edges **plus** a configurable sample of ordinary
+     training edges so the model does not forget warm nodes.
+- **Loss:** Huber/Smooth-L1 for NPMI regression (robust to the score distribution), BCE for the
+  classification task. Optimizer AdamW with `lr`/`weight_decay` from config.
+- **Validation on the val split, early stopping with `patience`,** best-checkpoint behaviour.
+- **CLI:** `python src/train.py --config configs/default.yaml --seeds 42,123,456`.
+- **Entire entrypoint must be import-clean and re-runnable.** Add a `--smoke` / low-epoch
+  reduced-config path so the *whole* pipeline can be exercised in seconds — a bug in the
+  top-level script must not be discoverable only after ten minutes of preprocessing.
+
+## PERFORMANCE ISSUE YOU MUST RESOLVE IN THIS PHASE
+With `walks.replace_csv_edges: true`, the walk corpus yields ~7.2 M ingr-ingr edges replacing
+the CSV's 111 k — a 65× blow-out. The per-epoch Python-level edge rebuild over millions of
+list entries is the bottleneck. Either (a) persist walk-derived edges + fingerprints to
+`data/cache/` so preprocessing is not repeated every run, and/or (b) raise `walks.min_count`
+and/or (c) vectorise the per-epoch rebuild with NumPy/torch. Measure and report the per-epoch
+time and the wall-clock for the full 3-seed run. Do not ship a pipeline whose setup cost dwarfs
+its training cost.
+
+---
+
+## PHASE 6 — Evaluation protocol + baselines  (`src/evaluate.py`, `src/baselines.py`)
+
+This is the most important phase. Metrics are computed **per test ingredient**, ranking *all*
+other ingredients against that ingredient's true held-out partners:
+
+- **Recall@10, Recall@20** — |top-k ∩ true partners| / |true partners|
+- **MRR** — reciprocal rank of the first true partner
+- **NDCG@20** — binary gains, ideal-ordering normalisation
+- **Spearman ρ** — predicted scores vs true NPMI over the true partners
+
+Report **mean ± std across 3+ seeds** in one table containing these five methods:
+
+| # | Method | Notes |
+|---|---|---|
+| 1 | Random | seeded, the floor |
+| 2 | Popularity (degree) | weighted degree in the training graph |
+| 3 | **Tanimoto-kNN (NO GNN)** | weighted average of chemical neighbours' true co-occurrences |
+| 4 | **Zero-degree GNN** | chemistry features only, NO pseudo-edges — the failure mode |
+| 5 | **Full Strategy III** | all pseudo-edges + weighted aggregation |
+
+**Report honestly.** If the GNN does not beat Tanimoto-kNN, say so plainly and do not tune
+until it does. Baselines 3 and 4 exist precisely to calibrate that claim; they are not
+ceremonial. Where the zero-degree GNN collapses to the popularity signal, show it — that is
+the result.
+
+Also implement and run `tests/benchmark_memory.py`: peak RSS/VRAM and runtime for the full
+pipeline, proving the Colab-free-tier constraint holds.
+
+---
+
+## PHASE 7 — Delivery
+
+- `notebooks/colab_quickstart.ipynb` — one-click runnable on Colab: clone → install → cache →
+  train → the final comparison table, on a T4.
+- `README.md` — install, run, expected runtime, config reference, dataset stats, the three
+  similarity strategies and their tradeoffs, the leakage protocol, and the results table.
+- A `requirements.txt` that actually installs (verified in a clean venv).
+- Full test suite stays green; add a test that asserts the *entrypoint* imports and that a
+  1–2 epoch smoke run completes — cheap insurance against a broken top-level script.
+- Final deliverable: the multi-seed results table plus 3–5 sentences of honest interpretation.
+
+## STOP HERE AND WAIT FOR MY REVIEW
+Do not proceed past Phase 7, do not add new strategies, and ask me before making any design
+decision not covered above.
+Two notes on choices I made in it:
+1. I wrote Phase 5 to require fixing the performance problem the walk corpus creates (7.2M edges replacing 111k), because that's the one thing that will make or break your run time — I measured it at ~6.5 min of preprocessing per run with nothing cached.
+2. I added the --smoke requirement because the defaultdict crash you just hit is exactly the class of bug that survives a green unit-test suite and then eats ten minutes of preprocessing before surfacing.
