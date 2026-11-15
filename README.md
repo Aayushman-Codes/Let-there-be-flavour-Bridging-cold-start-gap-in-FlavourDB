@@ -2,7 +2,7 @@
 
 **Cold-start food pairing on FlavorGraph.** Say a new ingredient shows up and nobody has cooked with it yet. Can you guess what it goes well with?
 
-That was our question. We tested a graph neural network built for this case ("Strategy III") against a plain nearest-neighbour method on [FlavorGraph](https://github.com/lamypark/FlavorGraph), describing each ingredient in four ways: chemistry, text, a food taxonomy, and a chemistry + text hybrid.
+That was our question. We tested a graph neural network built for this case ("we are referring to it as Strategy III") against a plain nearest-neighbour method on [FlavorGraph](https://github.com/lamypark/FlavorGraph), describing each ingredient in four ways: chemistry, text, a food taxonomy, and a chemistry + text hybrid.
 
 The nearest-neighbour method won every time. It finds known ingredients that look like the new one and borrows their recipe partners, and it beat the GNN by 2.7 to 4.6 times on Recall@10. The GNN also scored below a baseline that just recommends popular ingredients. The full write-up is in **[our IEEE-format report (PDF)](SavorLink_IEEE_Report.pdf)**.
 
