@@ -18,7 +18,9 @@
 | **Abhay TS** | PES1UG24AM008 |
 
 ---
+### Course deliverables including IEEE format paper, presentation and Video Presentation can be accessed [here](Deliverables/)
 
+---
 
 ## Table of Contents
 
