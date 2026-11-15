@@ -1,4 +1,4 @@
-# SavorLink
+# Let There Be Flavour
 
 **Cold-start food pairing on FlavorGraph.** Say a new ingredient shows up and nobody has cooked with it yet. Can you guess what it goes well with?
 
