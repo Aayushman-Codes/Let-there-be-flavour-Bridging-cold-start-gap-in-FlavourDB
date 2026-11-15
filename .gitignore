@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# Generated output (recreated by setup.bat / python -m src.run_benchmark)
+results/
+data/splits/
+data/cache/walk_edges_*.pkl
+*.zip
+
+# Optional 241 MB metapath walk corpus (over GitHub's 100 MB limit; see setup.md)
+M17-metapath_*.txt
+
+# Notebooks / OS / editors
+.ipynb_checkpoints/
+.DS_Store
+__MACOSX/
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,2498 @@
+{
+  "abalone": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "gastropod_mollusk",
+    "path": "animal/seafood/gastropod_mollusk/abalone"
+  },
+  "acorn": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/acorn"
+  },
+  "adzuki_bean": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "bean_pulse",
+    "path": "plant/legume/bean_pulse/adzuki_bean"
+  },
+  "agar": {
+    "origin": "plant",
+    "group": "algae",
+    "subgroup": "red_algae",
+    "path": "plant/algae/red_algae/agar"
+  },
+  "agave": {
+    "origin": "plant",
+    "group": "sweetener",
+    "subgroup": "agave_nectar",
+    "path": "plant/sweetener/agave_nectar/agave"
+  },
+  "albacore_tuna": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "pelagic_fish",
+    "path": "animal/seafood/pelagic_fish/albacore_tuna"
+  },
+  "alfalfa": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "sprout",
+    "path": "plant/legume/sprout/alfalfa"
+  },
+  "allspice": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "berry_spice",
+    "path": "plant/herb_spice/berry_spice/allspice"
+  },
+  "almond": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/almond"
+  },
+  "amaranth": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "pseudocereal",
+    "path": "plant/grain/pseudocereal/amaranth"
+  },
+  "anchovy": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "clupeoid_fish",
+    "path": "animal/seafood/clupeoid_fish/anchovy"
+  },
+  "angelica": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "apiaceae_herb",
+    "path": "plant/herb_spice/apiaceae_herb/angelica"
+  },
+  "anise": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "apiaceae_spice",
+    "path": "plant/herb_spice/apiaceae_spice/anise"
+  },
+  "apple": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "pome_fruit",
+    "path": "plant/fruit/pome_fruit/apple"
+  },
+  "apple_brandy": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "distilled_spirit",
+    "path": "processed/beverage/distilled_spirit/apple_brandy"
+  },
+  "apple_cider_vinegar": {
+    "origin": "processed",
+    "group": "condiment",
+    "subgroup": "fermented_acid",
+    "path": "processed/condiment/fermented_acid/apple_cider_vinegar"
+  },
+  "apricot": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "stone_fruit",
+    "path": "plant/fruit/stone_fruit/apricot"
+  },
+  "arrowroot": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "root_tuber",
+    "path": "plant/vegetable/root_tuber/arrowroot"
+  },
+  "artichoke": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "stem",
+    "path": "plant/vegetable/stem/artichoke"
+  },
+  "asparagus": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "stem",
+    "path": "plant/vegetable/stem/asparagus"
+  },
+  "avocado": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "fatty_fruit",
+    "path": "plant/fruit/fatty_fruit/avocado"
+  },
+  "bagel": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "baked_bread",
+    "path": "processed/grain_product/baked_bread/bagel"
+  },
+  "bamboo_shoot": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "stem",
+    "path": "plant/vegetable/stem/bamboo_shoot"
+  },
+  "banana": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "tropical_fruit",
+    "path": "plant/fruit/tropical_fruit/banana"
+  },
+  "barley": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "cereal_grass",
+    "path": "plant/grain/cereal_grass/barley"
+  },
+  "bartlett_pear": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "pome_fruit",
+    "path": "plant/fruit/pome_fruit/bartlett_pear"
+  },
+  "basil": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/basil"
+  },
+  "basmati_rice": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "rice",
+    "path": "plant/grain/rice/basmati_rice"
+  },
+  "bean": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "bean_pulse",
+    "path": "plant/legume/bean_pulse/bean"
+  },
+  "beef": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "bovine",
+    "path": "animal/meat/bovine/beef"
+  },
+  "beer": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "fermented_malt",
+    "path": "processed/beverage/fermented_malt/beer"
+  },
+  "beetroot": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "root_tuber",
+    "path": "plant/vegetable/root_tuber/beetroot"
+  },
+  "berry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/berry"
+  },
+  "biscuit": {
+    "origin": "processed",
+    "group": "bakery",
+    "subgroup": "baked_good",
+    "path": "processed/bakery/baked_good/biscuit"
+  },
+  "black_currant": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/black_currant"
+  },
+  "black_eyed_pea": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "bean_pulse",
+    "path": "plant/legume/bean_pulse/black_eyed_pea"
+  },
+  "black_raspberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/black_raspberry"
+  },
+  "black_tea": {
+    "origin": "plant",
+    "group": "beverage",
+    "subgroup": "tea_infusion",
+    "path": "plant/beverage/tea_infusion/black_tea"
+  },
+  "black_walnut": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/black_walnut"
+  },
+  "blackberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/blackberry"
+  },
+  "blackberry_brandy": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "distilled_spirit",
+    "path": "processed/beverage/distilled_spirit/blackberry_brandy"
+  },
+  "blue_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "blue_cheese",
+    "path": "animal/dairy/blue_cheese/blue_cheese"
+  },
+  "blueberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/blueberry"
+  },
+  "bluefish": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "seafood",
+    "path": "animal/seafood/seafood/bluefish"
+  },
+  "boysenberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/boysenberry"
+  },
+  "brandy": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "distilled_spirit",
+    "path": "processed/beverage/distilled_spirit/brandy"
+  },
+  "brazil_nut": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/brazil_nut"
+  },
+  "bread": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "baked_bread",
+    "path": "processed/grain_product/baked_bread/bread"
+  },
+  "breadfruit": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "baked_bread",
+    "path": "processed/grain_product/baked_bread/breadfruit"
+  },
+  "breakfast_cereal": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/breakfast_cereal"
+  },
+  "broad_bean": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "bean_pulse",
+    "path": "plant/legume/bean_pulse/broad_bean"
+  },
+  "broccoli": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/broccoli"
+  },
+  "brussels_sprout": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/brussels_sprout"
+  },
+  "buffalo": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/buffalo"
+  },
+  "bulgur": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/bulgur"
+  },
+  "burrito": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/burrito"
+  },
+  "butter": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "fat",
+    "path": "animal/dairy/fat/butter"
+  },
+  "buttermilk": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "fermented_milk",
+    "path": "animal/dairy/fermented_milk/buttermilk"
+  },
+  "butternut_squash": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cucurbit",
+    "path": "plant/vegetable/cucurbit/butternut_squash"
+  },
+  "cabbage": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/cabbage"
+  },
+  "cake": {
+    "origin": "processed",
+    "group": "bakery",
+    "subgroup": "baked_good",
+    "path": "processed/bakery/baked_good/cake"
+  },
+  "camembert_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "soft_cheese",
+    "path": "animal/dairy/soft_cheese/camembert_cheese"
+  },
+  "candy_bar": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/candy_bar"
+  },
+  "canola_oil": {
+    "origin": "plant",
+    "group": "fat_oil",
+    "subgroup": "vegetable_oil",
+    "path": "plant/fat_oil/vegetable_oil/canola_oil"
+  },
+  "caper": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/caper"
+  },
+  "capsicum": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/capsicum"
+  },
+  "cardamom": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "zingiber_spice",
+    "path": "plant/herb_spice/zingiber_spice/cardamom"
+  },
+  "cardoon": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/cardoon"
+  },
+  "carom_seed": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "seed",
+    "path": "plant/nut_seed/seed/carom_seed"
+  },
+  "carrot": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "root_tuber",
+    "path": "plant/vegetable/root_tuber/carrot"
+  },
+  "cashew_nut": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/cashew_nut"
+  },
+  "cassava": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "root_tuber",
+    "path": "plant/vegetable/root_tuber/cassava"
+  },
+  "cassia": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "bark_spice",
+    "path": "plant/herb_spice/bark_spice/cassia"
+  },
+  "catfish": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "seafood",
+    "path": "animal/seafood/seafood/catfish"
+  },
+  "cauliflower": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/cauliflower"
+  },
+  "caviar": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "fish_roe",
+    "path": "animal/seafood/fish_roe/caviar"
+  },
+  "celery": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "stem",
+    "path": "plant/vegetable/stem/celery"
+  },
+  "champagne": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "cured_pork",
+    "path": "animal/meat/cured_pork/champagne"
+  },
+  "chayote": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/chayote"
+  },
+  "cheddar_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "hard_cheese",
+    "path": "animal/dairy/hard_cheese/cheddar_cheese"
+  },
+  "cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "cheese",
+    "path": "animal/dairy/cheese/cheese"
+  },
+  "cherry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "stone_fruit",
+    "path": "plant/fruit/stone_fruit/cherry"
+  },
+  "cherry_brandy": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "stone_fruit",
+    "path": "plant/fruit/stone_fruit/cherry_brandy"
+  },
+  "cherry_pepper": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "stone_fruit",
+    "path": "plant/fruit/stone_fruit/cherry_pepper"
+  },
+  "cherry_tomato": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "stone_fruit",
+    "path": "plant/fruit/stone_fruit/cherry_tomato"
+  },
+  "chervil": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "apiaceae_herb",
+    "path": "plant/herb_spice/apiaceae_herb/chervil"
+  },
+  "chestnut": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/chestnut"
+  },
+  "chicken": {
+    "origin": "animal",
+    "group": "poultry",
+    "subgroup": "gallinaceous",
+    "path": "animal/poultry/gallinaceous/chicken"
+  },
+  "chickpea": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "pulse",
+    "path": "plant/legume/pulse/chickpea"
+  },
+  "chili": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "nightshade",
+    "path": "plant/vegetable/nightshade/chili"
+  },
+  "chinese_cabbage": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/chinese_cabbage"
+  },
+  "chinese_mustard": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "seed_spice",
+    "path": "plant/herb_spice/seed_spice/chinese_mustard"
+  },
+  "chive": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "allium",
+    "path": "plant/vegetable/allium/chive"
+  },
+  "chocolate": {
+    "origin": "processed",
+    "group": "confectionery",
+    "subgroup": "cacao_product",
+    "path": "processed/confectionery/cacao_product/chocolate"
+  },
+  "chocolate_spread": {
+    "origin": "processed",
+    "group": "confectionery",
+    "subgroup": "cacao_product",
+    "path": "processed/confectionery/cacao_product/chocolate_spread"
+  },
+  "cider": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "fermented_fruit",
+    "path": "processed/beverage/fermented_fruit/cider"
+  },
+  "cinnamon": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "bark_spice",
+    "path": "plant/herb_spice/bark_spice/cinnamon"
+  },
+  "citrus_fruit": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/citrus_fruit"
+  },
+  "clam": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "bivalve_mollusk",
+    "path": "animal/seafood/bivalve_mollusk/clam"
+  },
+  "clementine": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/clementine"
+  },
+  "clove": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "flower_spice",
+    "path": "plant/herb_spice/flower_spice/clove"
+  },
+  "cocoa": {
+    "origin": "plant",
+    "group": "beverage",
+    "subgroup": "cacao_product",
+    "path": "plant/beverage/cacao_product/cocoa"
+  },
+  "cocoa_butter": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "fat",
+    "path": "animal/dairy/fat/cocoa_butter"
+  },
+  "cocoa_powder": {
+    "origin": "plant",
+    "group": "beverage",
+    "subgroup": "cacao_product",
+    "path": "plant/beverage/cacao_product/cocoa_powder"
+  },
+  "coconut": {
+    "origin": "plant",
+    "group": "fat_oil",
+    "subgroup": "tropical_fat",
+    "path": "plant/fat_oil/tropical_fat/coconut"
+  },
+  "coffee": {
+    "origin": "plant",
+    "group": "beverage",
+    "subgroup": "coffee_infusion",
+    "path": "plant/beverage/coffee_infusion/coffee"
+  },
+  "comte_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "cheese",
+    "path": "animal/dairy/cheese/comte_cheese"
+  },
+  "conch": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/conch"
+  },
+  "condensed_milk": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "fluid_milk",
+    "path": "animal/dairy/fluid_milk/condensed_milk"
+  },
+  "cooking_oil": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/cooking_oil"
+  },
+  "coriander": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "apiaceae_spice",
+    "path": "plant/herb_spice/apiaceae_spice/coriander"
+  },
+  "corn": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "maize",
+    "path": "plant/grain/maize/corn"
+  },
+  "corn_chip": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "maize",
+    "path": "plant/grain/maize/corn_chip"
+  },
+  "corn_oil": {
+    "origin": "plant",
+    "group": "fat_oil",
+    "subgroup": "vegetable_oil",
+    "path": "plant/fat_oil/vegetable_oil/corn_oil"
+  },
+  "cornbread": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "baked_bread",
+    "path": "processed/grain_product/baked_bread/cornbread"
+  },
+  "cottage_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "soft_cheese",
+    "path": "animal/dairy/soft_cheese/cottage_cheese"
+  },
+  "couscous": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/couscous"
+  },
+  "crab": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "crustacean",
+    "path": "animal/seafood/crustacean/crab"
+  },
+  "cranberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/cranberry"
+  },
+  "crayfish": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "crustacean",
+    "path": "animal/seafood/crustacean/crayfish"
+  },
+  "cream": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "cream",
+    "path": "animal/dairy/cream/cream"
+  },
+  "cream_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "soft_cheese",
+    "path": "animal/dairy/soft_cheese/cream_cheese"
+  },
+  "cucumber": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cucurbit",
+    "path": "plant/vegetable/cucurbit/cucumber"
+  },
+  "cumin": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "apiaceae_spice",
+    "path": "plant/herb_spice/apiaceae_spice/cumin"
+  },
+  "currant": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/currant"
+  },
+  "curry_leaf": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/curry_leaf"
+  },
+  "cuttlefish": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "seafood",
+    "path": "animal/seafood/seafood/cuttlefish"
+  },
+  "date": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "tropical_fruit",
+    "path": "plant/fruit/tropical_fruit/date"
+  },
+  "deer": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/deer"
+  },
+  "dill": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "apiaceae_herb",
+    "path": "plant/herb_spice/apiaceae_herb/dill"
+  },
+  "dulce_de_leche": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/dulce_de_leche"
+  },
+  "dumpling": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/dumpling"
+  },
+  "egg": {
+    "origin": "animal",
+    "group": "poultry",
+    "subgroup": "egg",
+    "path": "animal/poultry/egg/egg"
+  },
+  "eggplant": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "nightshade",
+    "path": "plant/vegetable/nightshade/eggplant"
+  },
+  "elderberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/elderberry"
+  },
+  "endive": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/endive"
+  },
+  "epazote": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/epazote"
+  },
+  "evaporated_milk": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "fluid_milk",
+    "path": "animal/dairy/fluid_milk/evaporated_milk"
+  },
+  "fennel": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "apiaceae_herb",
+    "path": "plant/herb_spice/apiaceae_herb/fennel"
+  },
+  "feta_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "brined_cheese",
+    "path": "animal/dairy/brined_cheese/feta_cheese"
+  },
+  "fig": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "tropical_fruit",
+    "path": "plant/fruit/tropical_fruit/fig"
+  },
+  "filbert": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/filbert"
+  },
+  "fish": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "pelagic_fish",
+    "path": "animal/seafood/pelagic_fish/fish"
+  },
+  "flour": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "cereal_grass",
+    "path": "plant/grain/cereal_grass/flour"
+  },
+  "fruit_juice": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "beverage",
+    "path": "processed/beverage/beverage/fruit_juice"
+  },
+  "fruit_preserve": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/fruit_preserve"
+  },
+  "fruit_salad": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/fruit_salad"
+  },
+  "fudge": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/fudge"
+  },
+  "garlic": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "allium",
+    "path": "plant/vegetable/allium/garlic"
+  },
+  "gelatin": {
+    "origin": "animal",
+    "group": "thickener",
+    "subgroup": "collagen",
+    "path": "animal/thickener/collagen/gelatin"
+  },
+  "ghee": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "fat",
+    "path": "animal/dairy/fat/ghee"
+  },
+  "gin": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "distilled_spirit",
+    "path": "processed/beverage/distilled_spirit/gin"
+  },
+  "ginger": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "zingiber_spice",
+    "path": "plant/herb_spice/zingiber_spice/ginger"
+  },
+  "ginkgo_nut": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "distilled_spirit",
+    "path": "processed/beverage/distilled_spirit/ginkgo_nut"
+  },
+  "goat_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "caprine_cheese",
+    "path": "animal/dairy/caprine_cheese/goat_cheese"
+  },
+  "gooseberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/gooseberry"
+  },
+  "grape": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/grape"
+  },
+  "grapefruit": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "citrus",
+    "path": "plant/fruit/citrus/grapefruit"
+  },
+  "green_bean": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "bean_pulse",
+    "path": "plant/legume/bean_pulse/green_bean"
+  },
+  "green_bell_pepper": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "nightshade",
+    "path": "plant/vegetable/nightshade/green_bell_pepper"
+  },
+  "green_tea": {
+    "origin": "plant",
+    "group": "beverage",
+    "subgroup": "tea_infusion",
+    "path": "plant/beverage/tea_infusion/green_tea"
+  },
+  "green_zucchini": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cucurbit",
+    "path": "plant/vegetable/cucurbit/green_zucchini"
+  },
+  "grouper": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/grouper"
+  },
+  "gruyere_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "cheese",
+    "path": "animal/dairy/cheese/gruyere_cheese"
+  },
+  "guava": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "tropical_fruit",
+    "path": "plant/fruit/tropical_fruit/guava"
+  },
+  "haddock": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "gadoid_fish",
+    "path": "animal/seafood/gadoid_fish/haddock"
+  },
+  "ham": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "cured_pork",
+    "path": "animal/meat/cured_pork/ham"
+  },
+  "hamburger": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "cured_pork",
+    "path": "animal/meat/cured_pork/hamburger"
+  },
+  "hazelnut": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/hazelnut"
+  },
+  "honey": {
+    "origin": "animal",
+    "group": "sweetener",
+    "subgroup": "nectar",
+    "path": "animal/sweetener/nectar/honey"
+  },
+  "hop": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/hop"
+  },
+  "horseradish": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/horseradish"
+  },
+  "hot_dog": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/hot_dog"
+  },
+  "hummus": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/hummus"
+  },
+  "ice_cream": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "cream",
+    "path": "animal/dairy/cream/ice_cream"
+  },
+  "ice_cream_cone": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "cream",
+    "path": "animal/dairy/cream/ice_cream_cone"
+  },
+  "icing": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/icing"
+  },
+  "irish_moss": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/irish_moss"
+  },
+  "jackfruit": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/jackfruit"
+  },
+  "jalapeno": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "nightshade",
+    "path": "plant/vegetable/nightshade/jalapeno"
+  },
+  "jerusalem_artichoke": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "root_tuber",
+    "path": "plant/vegetable/root_tuber/jerusalem_artichoke"
+  },
+  "jicama": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "root_tuber",
+    "path": "plant/vegetable/root_tuber/jicama"
+  },
+  "kale": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/kale"
+  },
+  "kefir": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "fermented_milk",
+    "path": "animal/dairy/fermented_milk/kefir"
+  },
+  "kelp": {
+    "origin": "plant",
+    "group": "algae",
+    "subgroup": "kelp_algae",
+    "path": "plant/algae/kelp_algae/kelp"
+  },
+  "ketchup": {
+    "origin": "processed",
+    "group": "condiment",
+    "subgroup": "sauce",
+    "path": "processed/condiment/sauce/ketchup"
+  },
+  "kidney_bean": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "bean_pulse",
+    "path": "plant/legume/bean_pulse/kidney_bean"
+  },
+  "kiwi": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "tropical_fruit",
+    "path": "plant/fruit/tropical_fruit/kiwi"
+  },
+  "kohlrabi": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/kohlrabi"
+  },
+  "kombu": {
+    "origin": "plant",
+    "group": "algae",
+    "subgroup": "kelp_algae",
+    "path": "plant/algae/kelp_algae/kombu"
+  },
+  "kumquat": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "citrus",
+    "path": "plant/fruit/citrus/kumquat"
+  },
+  "lamb": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "ovine",
+    "path": "animal/meat/ovine/lamb"
+  },
+  "leek": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "allium",
+    "path": "plant/vegetable/allium/leek"
+  },
+  "lemon": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "citrus",
+    "path": "plant/fruit/citrus/lemon"
+  },
+  "lemon_balm": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/lemon_balm"
+  },
+  "lemon_verbena": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "citrus",
+    "path": "plant/fruit/citrus/lemon_verbena"
+  },
+  "lentil": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "lentil_pulse",
+    "path": "plant/legume/lentil_pulse/lentil"
+  },
+  "lettuce": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "leafy_green",
+    "path": "plant/vegetable/leafy_green/lettuce"
+  },
+  "lima_bean": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "bean_pulse",
+    "path": "plant/legume/bean_pulse/lima_bean"
+  },
+  "lime": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "citrus",
+    "path": "plant/fruit/citrus/lime"
+  },
+  "lingonberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/lingonberry"
+  },
+  "lobster": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "crustacean",
+    "path": "animal/seafood/crustacean/lobster"
+  },
+  "lovage": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "apiaceae_herb",
+    "path": "plant/herb_spice/apiaceae_herb/lovage"
+  },
+  "macadamia_nut": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/macadamia_nut"
+  },
+  "macaroni": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "pasta",
+    "path": "processed/grain_product/pasta/macaroni"
+  },
+  "mace": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "seed_spice",
+    "path": "plant/herb_spice/seed_spice/mace"
+  },
+  "madeira_wine": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "fortified_wine",
+    "path": "processed/beverage/fortified_wine/madeira_wine"
+  },
+  "mandarin_orange": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "citrus",
+    "path": "plant/fruit/citrus/mandarin_orange"
+  },
+  "mango": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "tropical_fruit",
+    "path": "plant/fruit/tropical_fruit/mango"
+  },
+  "margarine": {
+    "origin": "processed",
+    "group": "fat_oil",
+    "subgroup": "hydrogenated_fat",
+    "path": "processed/fat_oil/hydrogenated_fat/margarine"
+  },
+  "marjoram": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/marjoram"
+  },
+  "marshmallow": {
+    "origin": "processed",
+    "group": "confectionery",
+    "subgroup": "gelatin_sweet",
+    "path": "processed/confectionery/gelatin_sweet/marshmallow"
+  },
+  "marzipan": {
+    "origin": "processed",
+    "group": "confectionery",
+    "subgroup": "almond_paste",
+    "path": "processed/confectionery/almond_paste/marzipan"
+  },
+  "meat": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "meat_product",
+    "path": "animal/meat/meat_product/meat"
+  },
+  "meatball": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "meat_product",
+    "path": "animal/meat/meat_product/meatball"
+  },
+  "meatloaf": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "meat_product",
+    "path": "animal/meat/meat_product/meatloaf"
+  },
+  "melon": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "melon",
+    "path": "plant/fruit/melon/melon"
+  },
+  "meringue": {
+    "origin": "processed",
+    "group": "confectionery",
+    "subgroup": "whipped_egg",
+    "path": "processed/confectionery/whipped_egg/meringue"
+  },
+  "mexican_oregano": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/mexican_oregano"
+  },
+  "milk": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "fluid_milk",
+    "path": "animal/dairy/fluid_milk/milk"
+  },
+  "millet": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "cereal_grass",
+    "path": "plant/grain/cereal_grass/millet"
+  },
+  "mint": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/mint"
+  },
+  "miso": {
+    "origin": "processed",
+    "group": "legume_product",
+    "subgroup": "fermented_soy",
+    "path": "processed/legume_product/fermented_soy/miso"
+  },
+  "mixed_nut": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/mixed_nut"
+  },
+  "molasses": {
+    "origin": "plant",
+    "group": "sweetener",
+    "subgroup": "cane_byproduct",
+    "path": "plant/sweetener/cane_byproduct/molasses"
+  },
+  "mozzarella_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "soft_cheese",
+    "path": "animal/dairy/soft_cheese/mozzarella_cheese"
+  },
+  "mulberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/mulberry"
+  },
+  "multigrain_bread": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "baked_bread",
+    "path": "processed/grain_product/baked_bread/multigrain_bread"
+  },
+  "mung_bean": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "bean_pulse",
+    "path": "plant/legume/bean_pulse/mung_bean"
+  },
+  "mushroom": {
+    "origin": "fungi",
+    "group": "mushroom",
+    "subgroup": "agaric_fungus",
+    "path": "fungi/mushroom/agaric_fungus/mushroom"
+  },
+  "mustard": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "seed_spice",
+    "path": "plant/herb_spice/seed_spice/mustard"
+  },
+  "mustard_oil": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "seed_spice",
+    "path": "plant/herb_spice/seed_spice/mustard_oil"
+  },
+  "mutton": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "ovine",
+    "path": "animal/meat/ovine/mutton"
+  },
+  "nigella_seed": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "seed",
+    "path": "plant/nut_seed/seed/nigella_seed"
+  },
+  "nut": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "stem",
+    "path": "plant/vegetable/stem/nut"
+  },
+  "nutmeg": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "seed_spice",
+    "path": "plant/herb_spice/seed_spice/nutmeg"
+  },
+  "oat": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "cereal_grass",
+    "path": "plant/grain/cereal_grass/oat"
+  },
+  "okra": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/okra"
+  },
+  "olive": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "fatty_fruit",
+    "path": "plant/fruit/fatty_fruit/olive"
+  },
+  "onion": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "allium",
+    "path": "plant/vegetable/allium/onion"
+  },
+  "orange": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "citrus",
+    "path": "plant/fruit/citrus/orange"
+  },
+  "orange_bell_pepper": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "citrus",
+    "path": "plant/fruit/citrus/orange_bell_pepper"
+  },
+  "orange_oil": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "citrus",
+    "path": "plant/fruit/citrus/orange_oil"
+  },
+  "orange_roughy": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "citrus",
+    "path": "plant/fruit/citrus/orange_roughy"
+  },
+  "oregano": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/oregano"
+  },
+  "oyster": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "bivalve_mollusk",
+    "path": "animal/seafood/bivalve_mollusk/oyster"
+  },
+  "oyster_mushroom": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "bivalve_mollusk",
+    "path": "animal/seafood/bivalve_mollusk/oyster_mushroom"
+  },
+  "pancake": {
+    "origin": "processed",
+    "group": "bakery",
+    "subgroup": "baked_good",
+    "path": "processed/bakery/baked_good/pancake"
+  },
+  "papaya": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "tropical_fruit",
+    "path": "plant/fruit/tropical_fruit/papaya"
+  },
+  "parmesan_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "hard_cheese",
+    "path": "animal/dairy/hard_cheese/parmesan_cheese"
+  },
+  "parsley": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "apiaceae_herb",
+    "path": "plant/herb_spice/apiaceae_herb/parsley"
+  },
+  "parsnip": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "root_tuber",
+    "path": "plant/vegetable/root_tuber/parsnip"
+  },
+  "passion_fruit": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "tropical_fruit",
+    "path": "plant/fruit/tropical_fruit/passion_fruit"
+  },
+  "pasta": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "pasta",
+    "path": "processed/grain_product/pasta/pasta"
+  },
+  "pate": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/pate"
+  },
+  "pawpaw": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/pawpaw"
+  },
+  "pea": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "green_pea",
+    "path": "plant/legume/green_pea/pea"
+  },
+  "peach": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "stone_fruit",
+    "path": "plant/fruit/stone_fruit/peach"
+  },
+  "peanut": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "groundnut",
+    "path": "plant/nut_seed/groundnut/peanut"
+  },
+  "peanut_butter": {
+    "origin": "processed",
+    "group": "nut_product",
+    "subgroup": "nut_butter",
+    "path": "processed/nut_product/nut_butter/peanut_butter"
+  },
+  "peanut_oil": {
+    "origin": "plant",
+    "group": "fat_oil",
+    "subgroup": "vegetable_oil",
+    "path": "plant/fat_oil/vegetable_oil/peanut_oil"
+  },
+  "pear": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "pome_fruit",
+    "path": "plant/fruit/pome_fruit/pear"
+  },
+  "pear_brandy": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "pome_fruit",
+    "path": "plant/fruit/pome_fruit/pear_brandy"
+  },
+  "pecan": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/pecan"
+  },
+  "pectin": {
+    "origin": "plant",
+    "group": "thickener",
+    "subgroup": "polysaccharide",
+    "path": "plant/thickener/polysaccharide/pectin"
+  },
+  "pepper": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "nightshade",
+    "path": "plant/vegetable/nightshade/pepper"
+  },
+  "peppermint": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/peppermint"
+  },
+  "persimmon": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/persimmon"
+  },
+  "pheasant": {
+    "origin": "animal",
+    "group": "poultry",
+    "subgroup": "game_bird",
+    "path": "animal/poultry/game_bird/pheasant"
+  },
+  "phyllo_dough": {
+    "origin": "processed",
+    "group": "bakery",
+    "subgroup": "baked_good",
+    "path": "processed/bakery/baked_good/phyllo_dough"
+  },
+  "pie_crust": {
+    "origin": "processed",
+    "group": "bakery",
+    "subgroup": "baked_good",
+    "path": "processed/bakery/baked_good/pie_crust"
+  },
+  "pigeon_pea": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "green_pea",
+    "path": "plant/legume/green_pea/pigeon_pea"
+  },
+  "pineapple": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "tropical_fruit",
+    "path": "plant/fruit/tropical_fruit/pineapple"
+  },
+  "pink_salmon": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "salmonid_fish",
+    "path": "animal/seafood/salmonid_fish/pink_salmon"
+  },
+  "pistachio": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/pistachio"
+  },
+  "pita_bread": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "baked_bread",
+    "path": "processed/grain_product/baked_bread/pita_bread"
+  },
+  "plum": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "stone_fruit",
+    "path": "plant/fruit/stone_fruit/plum"
+  },
+  "plum_brandy": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "stone_fruit",
+    "path": "plant/fruit/stone_fruit/plum_brandy"
+  },
+  "plum_wine": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "stone_fruit",
+    "path": "plant/fruit/stone_fruit/plum_wine"
+  },
+  "pomegranate": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "tropical_fruit",
+    "path": "plant/fruit/tropical_fruit/pomegranate"
+  },
+  "popcorn": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "maize",
+    "path": "plant/grain/maize/popcorn"
+  },
+  "poppy_seed": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "seed",
+    "path": "plant/nut_seed/seed/poppy_seed"
+  },
+  "pork": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "porcine",
+    "path": "animal/meat/porcine/pork"
+  },
+  "port_wine": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "fortified_wine",
+    "path": "processed/beverage/fortified_wine/port_wine"
+  },
+  "potato": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "nightshade",
+    "path": "plant/vegetable/nightshade/potato"
+  },
+  "potato_bread": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "nightshade",
+    "path": "plant/vegetable/nightshade/potato_bread"
+  },
+  "potato_chip": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "nightshade",
+    "path": "plant/vegetable/nightshade/potato_chip"
+  },
+  "prawn": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "crustacean",
+    "path": "animal/seafood/crustacean/prawn"
+  },
+  "prickly_pear": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "pome_fruit",
+    "path": "plant/fruit/pome_fruit/prickly_pear"
+  },
+  "provolone_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "hard_cheese",
+    "path": "animal/dairy/hard_cheese/provolone_cheese"
+  },
+  "pudding": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/pudding"
+  },
+  "pumpkin": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cucurbit",
+    "path": "plant/vegetable/cucurbit/pumpkin"
+  },
+  "purslane": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/purslane"
+  },
+  "quail": {
+    "origin": "animal",
+    "group": "poultry",
+    "subgroup": "game_bird",
+    "path": "animal/poultry/game_bird/quail"
+  },
+  "quince": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "pome_fruit",
+    "path": "plant/fruit/pome_fruit/quince"
+  },
+  "quinoa": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "pseudocereal",
+    "path": "plant/grain/pseudocereal/quinoa"
+  },
+  "rabbit": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "game_meat",
+    "path": "animal/meat/game_meat/rabbit"
+  },
+  "radish": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/radish"
+  },
+  "rainbow_trout": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "salmonid_fish",
+    "path": "animal/seafood/salmonid_fish/rainbow_trout"
+  },
+  "raisin": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/raisin"
+  },
+  "raisin_bread": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/raisin_bread"
+  },
+  "rapini": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/rapini"
+  },
+  "raspberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/raspberry"
+  },
+  "ravioli": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/ravioli"
+  },
+  "red_bell_pepper": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "nightshade",
+    "path": "plant/vegetable/nightshade/red_bell_pepper"
+  },
+  "red_currant": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/red_currant"
+  },
+  "red_raspberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/red_raspberry"
+  },
+  "red_rice": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "rice",
+    "path": "plant/grain/rice/red_rice"
+  },
+  "red_wine": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "fermented_grape",
+    "path": "processed/beverage/fermented_grape/red_wine"
+  },
+  "relish": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/relish"
+  },
+  "rhubarb": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "stem",
+    "path": "plant/vegetable/stem/rhubarb"
+  },
+  "rice": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "rice",
+    "path": "plant/grain/rice/rice"
+  },
+  "rice_cake": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "rice",
+    "path": "plant/grain/rice/rice_cake"
+  },
+  "ricotta_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "soft_cheese",
+    "path": "animal/dairy/soft_cheese/ricotta_cheese"
+  },
+  "romano_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "cheese",
+    "path": "animal/dairy/cheese/romano_cheese"
+  },
+  "roquefort_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "blue_cheese",
+    "path": "animal/dairy/blue_cheese/roquefort_cheese"
+  },
+  "rose": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/rose"
+  },
+  "rose_wine": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "fermented_grape",
+    "path": "processed/beverage/fermented_grape/rose_wine"
+  },
+  "rosemary": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/rosemary"
+  },
+  "rum": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "distilled_spirit",
+    "path": "processed/beverage/distilled_spirit/rum"
+  },
+  "rutabaga": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/rutabaga"
+  },
+  "rye_bread": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "baked_bread",
+    "path": "processed/grain_product/baked_bread/rye_bread"
+  },
+  "saffron": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "stigma_spice",
+    "path": "plant/herb_spice/stigma_spice/saffron"
+  },
+  "sage": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/sage"
+  },
+  "sake": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/sake"
+  },
+  "salad_dressing": {
+    "origin": "processed",
+    "group": "condiment",
+    "subgroup": "sauce",
+    "path": "processed/condiment/sauce/salad_dressing"
+  },
+  "salmon": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "salmonid_fish",
+    "path": "animal/seafood/salmonid_fish/salmon"
+  },
+  "salt": {
+    "origin": "mineral",
+    "group": "condiment",
+    "subgroup": "sodium_chloride",
+    "path": "mineral/condiment/sodium_chloride/salt"
+  },
+  "saskatoon_berry": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/saskatoon_berry"
+  },
+  "sausage": {
+    "origin": "animal",
+    "group": "meat",
+    "subgroup": "processed_meat",
+    "path": "animal/meat/processed_meat/sausage"
+  },
+  "scallop": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "bivalve_mollusk",
+    "path": "animal/seafood/bivalve_mollusk/scallop"
+  },
+  "scotch_whisky": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/scotch_whisky"
+  },
+  "semolina": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/semolina"
+  },
+  "sesame": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "seed",
+    "path": "plant/nut_seed/seed/sesame"
+  },
+  "shallot": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "allium",
+    "path": "plant/vegetable/allium/shallot"
+  },
+  "shortening": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/shortening"
+  },
+  "shrimp": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "crustacean",
+    "path": "animal/seafood/crustacean/shrimp"
+  },
+  "smelt": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/smelt"
+  },
+  "snail": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/snail"
+  },
+  "sockeye_salmon": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "salmonid_fish",
+    "path": "animal/seafood/salmonid_fish/sockeye_salmon"
+  },
+  "sorghum": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "cereal_grass",
+    "path": "plant/grain/cereal_grass/sorghum"
+  },
+  "sorrel": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/sorrel"
+  },
+  "soup": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/soup"
+  },
+  "sour_cherry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "stone_fruit",
+    "path": "plant/fruit/stone_fruit/sour_cherry"
+  },
+  "soy_yogurt": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "fermented_milk",
+    "path": "animal/dairy/fermented_milk/soy_yogurt"
+  },
+  "soybean": {
+    "origin": "plant",
+    "group": "legume",
+    "subgroup": "bean_pulse",
+    "path": "plant/legume/bean_pulse/soybean"
+  },
+  "soybean_oil": {
+    "origin": "plant",
+    "group": "fat_oil",
+    "subgroup": "vegetable_oil",
+    "path": "plant/fat_oil/vegetable_oil/soybean_oil"
+  },
+  "sparkling_wine": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "fermented_grape",
+    "path": "processed/beverage/fermented_grape/sparkling_wine"
+  },
+  "spearmint": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/spearmint"
+  },
+  "spelt": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/spelt"
+  },
+  "spinach": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "leafy_green",
+    "path": "plant/vegetable/leafy_green/spinach"
+  },
+  "spirulina": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/spirulina"
+  },
+  "squab": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/squab"
+  },
+  "squid": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "cephalopod",
+    "path": "animal/seafood/cephalopod/squid"
+  },
+  "squirrel": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/squirrel"
+  },
+  "star_anise": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "warm_spice",
+    "path": "plant/herb_spice/warm_spice/star_anise"
+  },
+  "star_fruit": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/star_fruit"
+  },
+  "strawberry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/strawberry"
+  },
+  "strawberry_jam": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "berry",
+    "path": "plant/fruit/berry/strawberry_jam"
+  },
+  "striped_bass": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "perch_fish",
+    "path": "animal/seafood/perch_fish/striped_bass"
+  },
+  "sugar": {
+    "origin": "plant",
+    "group": "sweetener",
+    "subgroup": "sucrose",
+    "path": "plant/sweetener/sucrose/sugar"
+  },
+  "sugar_substitute": {
+    "origin": "plant",
+    "group": "sweetener",
+    "subgroup": "sucrose",
+    "path": "plant/sweetener/sucrose/sugar_substitute"
+  },
+  "summer_savory": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/summer_savory"
+  },
+  "swede": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/swede"
+  },
+  "sweet_basil": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/sweet_basil"
+  },
+  "sweet_cherry": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "stone_fruit",
+    "path": "plant/fruit/stone_fruit/sweet_cherry"
+  },
+  "sweet_marjoram": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/sweet_marjoram"
+  },
+  "sweet_potato": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "root_tuber",
+    "path": "plant/vegetable/root_tuber/sweet_potato"
+  },
+  "sweetcorn": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "maize",
+    "path": "plant/grain/maize/sweetcorn"
+  },
+  "swiss_cheese": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "hard_cheese",
+    "path": "animal/dairy/hard_cheese/swiss_cheese"
+  },
+  "swordfish": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "pelagic_fish",
+    "path": "animal/seafood/pelagic_fish/swordfish"
+  },
+  "syrup": {
+    "origin": "plant",
+    "group": "sweetener",
+    "subgroup": "sugar_syrup",
+    "path": "plant/sweetener/sugar_syrup/syrup"
+  },
+  "tamale": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "corn_product",
+    "path": "processed/grain_product/corn_product/tamale"
+  },
+  "tangerine": {
+    "origin": "plant",
+    "group": "fruit",
+    "subgroup": "citrus",
+    "path": "plant/fruit/citrus/tangerine"
+  },
+  "tarragon": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "asteraceae_herb",
+    "path": "plant/herb_spice/asteraceae_herb/tarragon"
+  },
+  "tea": {
+    "origin": "plant",
+    "group": "beverage",
+    "subgroup": "tea_infusion",
+    "path": "plant/beverage/tea_infusion/tea"
+  },
+  "teff": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "cereal_grass",
+    "path": "plant/grain/cereal_grass/teff"
+  },
+  "thyme": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/thyme"
+  },
+  "tofu": {
+    "origin": "processed",
+    "group": "legume_product",
+    "subgroup": "soy_product",
+    "path": "processed/legume_product/soy_product/tofu"
+  },
+  "tomato": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "nightshade",
+    "path": "plant/vegetable/nightshade/tomato"
+  },
+  "tortilla": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "flatbread",
+    "path": "processed/grain_product/flatbread/tortilla"
+  },
+  "tortilla_chip": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "snack",
+    "path": "processed/grain_product/snack/tortilla_chip"
+  },
+  "tostada": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "flatbread",
+    "path": "processed/grain_product/flatbread/tostada"
+  },
+  "trail_mix": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/trail_mix"
+  },
+  "truffle": {
+    "origin": "fungi",
+    "group": "mushroom",
+    "subgroup": "subterranean_fungus",
+    "path": "fungi/mushroom/subterranean_fungus/truffle"
+  },
+  "turbot": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "flatfish",
+    "path": "animal/seafood/flatfish/turbot"
+  },
+  "turkey": {
+    "origin": "animal",
+    "group": "poultry",
+    "subgroup": "gallinaceous",
+    "path": "animal/poultry/gallinaceous/turkey"
+  },
+  "turmeric": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "zingiber_spice",
+    "path": "plant/herb_spice/zingiber_spice/turmeric"
+  },
+  "turnip": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/turnip"
+  },
+  "vanilla": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "orchid_spice",
+    "path": "plant/herb_spice/orchid_spice/vanilla"
+  },
+  "vegetable_juice": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "beverage",
+    "path": "processed/beverage/beverage/vegetable_juice"
+  },
+  "vermouth": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "fortified_wine",
+    "path": "processed/beverage/fortified_wine/vermouth"
+  },
+  "vinegar": {
+    "origin": "processed",
+    "group": "condiment",
+    "subgroup": "fermented_acid",
+    "path": "processed/condiment/fermented_acid/vinegar"
+  },
+  "vodka": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "distilled_spirit",
+    "path": "processed/beverage/distilled_spirit/vodka"
+  },
+  "waffle": {
+    "origin": "processed",
+    "group": "bakery",
+    "subgroup": "baked_good",
+    "path": "processed/bakery/baked_good/waffle"
+  },
+  "walleye": {
+    "origin": "animal",
+    "group": "seafood",
+    "subgroup": "freshwater_fish",
+    "path": "animal/seafood/freshwater_fish/walleye"
+  },
+  "walnut": {
+    "origin": "plant",
+    "group": "nut_seed",
+    "subgroup": "tree_nut",
+    "path": "plant/nut_seed/tree_nut/walnut"
+  },
+  "wasabi": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/wasabi"
+  },
+  "water": {
+    "origin": "mineral",
+    "group": "liquid",
+    "subgroup": "water",
+    "path": "mineral/liquid/water/water"
+  },
+  "water_chestnut": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "stem",
+    "path": "plant/vegetable/stem/water_chestnut"
+  },
+  "watercress": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/watercress"
+  },
+  "wheat": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "cereal_grass",
+    "path": "plant/grain/cereal_grass/wheat"
+  },
+  "whey": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "whey",
+    "path": "animal/dairy/whey/whey"
+  },
+  "white_bread": {
+    "origin": "processed",
+    "group": "grain_product",
+    "subgroup": "baked_bread",
+    "path": "processed/grain_product/baked_bread/white_bread"
+  },
+  "white_cabbage": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cruciferous",
+    "path": "plant/vegetable/cruciferous/white_cabbage"
+  },
+  "white_pepper": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "piper_spice",
+    "path": "plant/herb_spice/piper_spice/white_pepper"
+  },
+  "white_wine": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "fermented_grape",
+    "path": "processed/beverage/fermented_grape/white_wine"
+  },
+  "wild_rice": {
+    "origin": "plant",
+    "group": "grain",
+    "subgroup": "rice",
+    "path": "plant/grain/rice/wild_rice"
+  },
+  "wine": {
+    "origin": "processed",
+    "group": "beverage",
+    "subgroup": "fermented_grape",
+    "path": "processed/beverage/fermented_grape/wine"
+  },
+  "winter_savory": {
+    "origin": "plant",
+    "group": "herb_spice",
+    "subgroup": "lamiaceae_herb",
+    "path": "plant/herb_spice/lamiaceae_herb/winter_savory"
+  },
+  "winter_squash": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cucurbit",
+    "path": "plant/vegetable/cucurbit/winter_squash"
+  },
+  "wonton_wrapper": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "culinary_plant",
+    "path": "plant/vegetable/culinary_plant/wonton_wrapper"
+  },
+  "yam": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "root_tuber",
+    "path": "plant/vegetable/root_tuber/yam"
+  },
+  "yellow_bell_pepper": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "nightshade",
+    "path": "plant/vegetable/nightshade/yellow_bell_pepper"
+  },
+  "yellow_zucchini": {
+    "origin": "plant",
+    "group": "vegetable",
+    "subgroup": "cucurbit",
+    "path": "plant/vegetable/cucurbit/yellow_zucchini"
+  },
+  "yogurt": {
+    "origin": "animal",
+    "group": "dairy",
+    "subgroup": "fermented_milk",
+    "path": "animal/dairy/fermented_milk/yogurt"
+  }
+}

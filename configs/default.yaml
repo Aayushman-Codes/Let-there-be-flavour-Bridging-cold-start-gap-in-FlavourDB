@@ -1,0 +1,148 @@
+# SavorLink Strategy III — Default Configuration
+# All paths relative to project root unless absolute.
+
+seed: 42
+device: "auto"  # "auto" picks cuda if available, else cpu
+
+paths:
+  raw_nodes: "data/raw/nodes_191120.csv"
+  raw_edges: "data/raw/edges_191120.csv"
+  # Metapath random-walk corpus (CHNHC + NHCHN + RandWalk, 100 walks, len=50).
+  # When set, walk-derived ingr-ingr co-occurrence edges are used INSTEAD OF
+  # (or merged with) the CSV ingr-ingr edges.  Set to null to disable.
+  # DISABLED (null): among the 416 hubs, walk-derived edges connect every pair
+  # (each test ingredient gets ~417 "partners" out of 415 candidates), most with
+  # PPMI = 0, and they are dominated by hub->compound->hub transitions, i.e.
+  # shared chemistry. That makes Recall/MRR meaningless and makes the target
+  # partly chemical. The CSV ingr-ingr edges are real Recipe1M NPMI co-occurrence.
+  walk_corpus: null
+  cache_dir: "data/cache"
+  pubchem_cache: "data/cache/pubchem_smiles.json"
+  fingerprint_cache: "data/cache/fingerprints.npz"
+  similarity_cache: "data/cache/topk_similarities.pkl"
+  split_dir: "data/splits"
+
+data:
+  # Hub-only mode: When true, restrict graph nodes, edges, training negatives,
+  # and evaluation candidates to the 416 hub ingredients that possess chemical
+  # compound annotations. This prevents the 6,236 featureless zero-vector nodes
+  # from degrading negative sampling and ranking. Set to false for all 6,653 ingredients.
+  hub_only: true
+
+  # Columns in the nodes CSV
+  node_id_col: "node_id"
+  name_col: "name"
+  pubchem_id_col: "id"
+  node_type_col: "node_type"
+  hub_col: "is_hub"
+
+  # Columns in the edges CSV
+  edge_src_col: "id_1"
+  edge_dst_col: "id_2"
+  edge_score_col: "score"
+  edge_type_col: "edge_type"
+
+  # Node type values
+  ingredient_type: "ingredient"
+  compound_types: ["compound"]
+  hub_values: ["hub"]  # is_hub values that mark hub ingredients
+  compound_hub_values: ["food", "drug"]  # is_hub values for compound subtypes
+
+  # Edge type values
+  ingr_ingr_edge: "ingr-ingr"
+  ingr_fcomp_edge: "ingr-fcomp"
+  ingr_dcomp_edge: "ingr-dcomp"
+
+pubchem:
+  max_requests_per_second: 5
+  batch_size: 100
+  retry_max: 3
+  retry_backoff: 2.0
+  timeout: 10
+
+fingerprints:
+  type: "morgan"  # "morgan" or "rdkit"
+  radius: 2       # Morgan fingerprint radius
+  n_bits: 2048    # Fingerprint bit length
+
+similarity:
+  # Strategy for aggregating compound-level Tanimoto into ingredient-level similarity.
+  # Options: "mean_best_match", "max_pairwise", "union_fingerprint"
+  strategy: "mean_best_match"
+
+  # For sparse top-k: how many neighbors per cold-start ingredient
+  top_k: 10
+
+  # Optional temperature scaling: sim = sim ** (1/temperature). 1.0 = no scaling.
+  temperature: 1.0
+
+  # Minimum similarity threshold (floor). Pseudo-edges below this are dropped.
+  threshold: 0.05
+
+  # For batched computation: max compounds compared per batch (memory guard)
+  batch_size: 256
+
+  # Hub-only mode: only compute similarity against hub ingredients (saves memory)
+  hub_only: true
+
+walks:
+  # Context window (in ingredient tokens per walk) for co-occurrence counting.
+  window_size: 5
+  # Drop pairs with raw co-occurrence count below this (noise filter).
+  min_count: 2
+  # Score normalisation: "pmi" (PPMI), "freq" (lift-normalised), or "count".
+  score_mode: "pmi"
+  # If true, walk edges REPLACE CSV ingr-ingr edges.
+  # If false, both are merged (CSV edges kept alongside walk edges).
+  replace_csv_edges: true
+
+pseudo_edges:
+  top_k: 10
+  temperature: 1.0
+  threshold: 0.05
+  include_reverse: true  # Add reverse edges (neighbor -> cold node) too
+
+splits:
+  # Fraction of ingredients to hold out as test (cold-start simulation)
+  test_frac: 0.15
+  val_frac: 0.10
+  # Minimum ingr-ingr degree to be eligible as test/val (need edges to evaluate)
+  min_degree: 5
+  # Only hub ingredients are eligible for test/val (they have compounds)
+  hub_only: true
+
+model:
+  # Which task: "regression" (predict NPMI) or "classification" (predict edge existence)
+  task: "regression"
+  hidden_dim: 128
+  num_layers: 2
+  dropout: 0.3
+  aggregator: "mean"  # GraphSAGE aggregator type
+  heads: 4            # GAT attention heads
+  use_gat: false      # Use GAT instead of GraphSAGE
+
+  # Cuisine branch (optional, requires cuisine labels in data)
+  cuisine_branch:
+    enabled: false
+    num_cuisines: 0
+
+  # Fusion
+  fusion: "gated"  # "gated", "add", "concat"
+
+training:
+  epochs: 100
+  lr: 0.001
+  weight_decay: 1e-5
+  patience: 15
+  cold_mask_frac: 0.1  # Fraction of train ingredients to cold-mask each epoch
+  batch_size: 512
+  # Negatives per positive (BPR: each negative shares the positive's anchor node)
+  neg_sample_ratio: 4
+  # Pool for negative sampling: "hubs" (only sample negatives from ingredients with chemistry) or "all"
+  negative_pool: "hubs"
+
+evaluation:
+  ks: [10, 20]
+  seeds: [42, 123, 456]
+  # Candidate ranking pool: "hubs" (rank against 416 ingredients with chemistry) or "all" (rank against all 6,653)
+  candidate_pool: "hubs"

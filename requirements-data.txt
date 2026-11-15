@@ -1,0 +1,7 @@
+# Optional extras:
+#  - rebuild the feature caches in data/cache/ (python -m src.data.build_all_modalities)
+#  - the frontend's live "add your own context" semantic encoder
+# Not needed to train, evaluate or run the rest of the frontend.
+-r requirements.txt
+rdkit>=2023.3.1
+sentence-transformers>=2.2.0
